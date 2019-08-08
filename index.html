@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hello!</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="anime.min.js"></script>
+     <script src="patternlock.js"></script>
+    <script src="/script.js" defer></script>
+    
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  </head>  
+  <body>
+    <div class="refresh-button"></div>
+    
+    <div class="transfer-view recieve-transfer">
+<!--    <div class="status-bar"></div> -->
+    <div class="live-area">
+      <div class="group">
+        <div class="current-transfer"><span class="currency-symbol">Ksh</span><span class="transfer-amount">0.00</span></div>
+        <div class="speak-icon"><img src="https://cdn.glitch.com/349dde6e-43fb-4589-9e89-701ce6e072ac%2Fspeak.png?v=1563314682725"/></div>
+      </div>
+      <div class="confirm recieve-transfer-confirm">
+         <div class="button-backer green">
+           <img src="https://cdn.glitch.com/349dde6e-43fb-4589-9e89-701ce6e072ac%2Fforward-white.svg?v=1564071905387">
+         </div>
+      </div>
+      <div class="live-bill-holder">
+<!--         <div class="undo"><img src="https://cdn.glitch.com/349dde6e-43fb-4589-9e89-701ce6e072ac%2Fundo.png?v=1563314682764"/></div> -->
+      </div>
+      <div class="finalized">
+        <img src="https://cdn.glitch.com/349dde6e-43fb-4589-9e89-701ce6e072ac%2Ffinalized.svg?v=1564075769409"/>
+      </div>
+      <div class="transfer-actions">
+        <div class="transfer-action-img">
+          <img src="https://cdn.glitch.com/349dde6e-43fb-4589-9e89-701ce6e072ac%2Ftuma-full.png?v=1564005092139"/>
+        </div>
+        <div class="wrap">
+          <div class="first-user">
+            <img src="https://cdn.glitch.com/349dde6e-43fb-4589-9e89-701ce6e072ac%2Fkenyan-user-img.jpg?v=1563821898054"/>
+          </div>
+          <div class="money-direction forward">
+            <img src="https://cdn.glitch.com/349dde6e-43fb-4589-9e89-701ce6e072ac%2Fforward.svg?v=1563805378895"/>
+          </div>
+          <div class="second-user">
+            <img src="https://cdn.glitch.com/349dde6e-43fb-4589-9e89-701ce6e072ac%2Fmaina.jpg?v=1563903214213"/>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dark-bg">
+    <div class="numberpad hide">
+        <div class="numberbutton number one">1</div>
+        <div class="numberbutton number one">2</div>
+        <div class="numberbutton number one">3</div>
+        <div class="numberbutton number one">4</div>
+        <div class="numberbutton number one">5</div>
+        <div class="numberbutton number one">6</div>
+        <div class="numberbutton number one">7</div>
+        <div class="numberbutton number one">8</div>
+        <div class="numberbutton number one">9</div>
+        <div class="numberbutton number one">.</div>
+        <div class="numberbutton number one">0</div>
+        <div class="numberbutton number one">&#60;</div>
+    </div>
+    <div class="bill-roll">
+      <div class="bill currency-button"><div class="denomination">1000</div><img src="https://cdn.glitch.com/349dde6e-43fb-4589-9e89-701ce6e072ac%2Fbill-1000shilling.png?v=1563972795671"/></div>
+      <div class="bill currency-button"><div class="denomination">500</div><img src="https://cdn.glitch.com/349dde6e-43fb-4589-9e89-701ce6e072ac%2Fbill-500shilling.png?v=1563972795844"/></div>
+      <div class="bill currency-button"><div class="denomination">200</div><img src="https://cdn.glitch.com/349dde6e-43fb-4589-9e89-701ce6e072ac%2Fbill-200shilling.png?v=1563314684553"/></div>
+      <div class="bill currency-button"><div class="denomination">100</div><img src="https://cdn.glitch.com/349dde6e-43fb-4589-9e89-701ce6e072ac%2Fbill-100shilling.png?v=1563972795607"/></div>
+      <div class="bill currency-button"><div class="denomination">50</div><img src="https://cdn.glitch.com/349dde6e-43fb-4589-9e89-701ce6e072ac%2Fbill-50shilling.png?v=1563972795560"/></div>
+      <div class="bill currency-button"><div class="denomination">40</div><img src="https://cdn.glitch.com/349dde6e-43fb-4589-9e89-701ce6e072ac%2Fcoin-40shilling.png?v=1563972795178"/></div>
+      <div class="bill currency-button"><div class="denomination">20</div><img src="https://cdn.glitch.com/349dde6e-43fb-4589-9e89-701ce6e072ac%2Fcoin-20shilling.png?v=1563972795303"/></div>
+      <div class="bill currency-button"><div class="denomination">10</div><img src="https://cdn.glitch.com/349dde6e-43fb-4589-9e89-701ce6e072ac%2Fcoin-10shilling.png?v=1563972795233"/></div>
+      <div class="bill currency-button"><div class="denomination">5</div><img src="https://cdn.glitch.com/349dde6e-43fb-4589-9e89-701ce6e072ac%2Fcoin-5shilling.png?v=1563972795355"/></div>
+      <div class="coin currency-button"><div class="denomination">1</div><img src="https://cdn.glitch.com/349dde6e-43fb-4589-9e89-701ce6e072ac%2Fcoin-1shilling.png?v=1563314682701"/></div>
+      <div class="gradientFade"></div>
+    </div>
+    <div class="speaker hide">
+      <div class="speak-to-me">
+        <div class="microphone">
+          <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 107.53 191.99"><defs></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><rect  x="22.06" width="63.41" height="132.8" rx="31.71"/><path  d="M58.26 152.75a53.83 53.83 0 0 0 49.27-53.56h-9a44.77 44.77 0 0 1-89.53 0H0a53.83 53.83 0 0 0 49.26 53.56V183H7.16v9h93.21v-9H58.26z"/></g></g></svg>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="tool-switcher">
+      <div class="group">
+        <div class="tool tool-icon numpad">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 31 13"><path d="M6.1 1.8c0-.6-.6-1.2-1.3-1.2-.6 0-1 .4-1.3.6L.8 3.8c-.2.1-.5.5-.5 1C.3 5.4.9 6 1.6 6c.5 0 .9-.4 1.1-.6l.7-.7h.2V11c0 .6.6 1.2 1.3 1.2s1.3-.6 1.3-1.2V1.8zm12.1 2.4c0-2-1.7-3.7-4.3-3.7-2.6 0-4.2 1.6-4.2 2.6 0 .6.5 1.1 1.2 1.1 1.2 0 1.2-1.5 3.1-1.5.9 0 1.5.6 1.5 1.4 0 1.6-3.4 3.8-5 5.1-.4.3-1 .9-1 1.6 0 .6.5 1.1 1.3 1.1H17c.8 0 1.3-.5 1.3-1.1s-.5-1-1.3-1h-3.4v-.2c1.4-1.1 4.6-3 4.6-5.4zM29 3.1c.2-.2.6-.6.6-1.2S29.1.8 28.3.8h-5.4c-.8 0-1.3.5-1.3 1.1S22.1 3 22.9 3h3v.2L24 5c-.2.2-.6.6-.6 1.2s.5 1.1 1.3 1.1h1c1.2 0 1.8.6 1.8 1.4 0 .7-.6 1.4-1.8 1.4-1.9 0-1.9-1.5-3.1-1.5-.7 0-1.2.5-1.2 1.1 0 1 1.6 2.6 4.2 2.6 3 0 4.6-1.7 4.6-3.6 0-1.8-1.4-3.1-3.2-3.3v-.1l2-2.2z"/></svg>
+        </div>
+        <div class="tool tool-icon billpad active">
+         <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32.7 14.3"><path d="M19.7 11.6H5.4v2.7h17.7V4.8h-3.4z"/><path  d="M0 0h17.7v9.5H0z"/><circle  cx="30" cy="2.7" r="2.7"/><path  d="M30 8.9c-1.5 0-2.7 1.2-2.7 2.7 0 1.5 1.2 2.7 2.7 2.7s2.7-1.2 2.7-2.7c0-1.5-1.2-2.7-2.7-2.7z"/></svg>
+        </div>
+        <div class="tool tool-icon speakpad">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 43.8 17.6"><path d="M33.5 5c1 1.1 1.6 2.4 1.6 3.8s-.5 2.8-1.6 3.8c-.3.3-.9.3-1.2.1-.2-.2-.3-.5-.3-.7s.1-.4.2-.5c.8-.8 1.2-1.7 1.2-2.8 0-1-.4-2-1.2-2.8-.3-.3-.3-.8.1-1.1.3-.2.9-.1 1.2.2zM40.1.3c-.3-.3-.9-.4-1.2-.1-.3.3-.4.8-.1 1.1C40.9 3.4 42 6 42 8.9c0 2.8-1.2 5.4-3.2 7.6-.1.2-.2.3-.2.5s.1.4.3.6c.4.2.9.2 1.2-.2 2.3-2.4 3.6-5.4 3.6-8.6S42.5 2.6 40.1.3zm-3.3 1.8c-.3-.3-.9-.4-1.2-.1-.3.3-.4.8-.1 1.1 1.6 1.6 2.4 3.6 2.4 5.7s-.9 4.1-2.4 5.7c-.1.2-.2.3-.2.5s.1.4.3.6c.3.3.9.3 1.2-.1 1.8-1.9 2.8-4.3 2.8-6.8 0-2.4-1-4.8-2.8-6.6zm-8.9 4.5c.1.2.1.5 0 .7-.1.3-4.7 8.7-13.9 8.7C4.9 16 .3 7.6.1 7.3c-.2-.2-.1-.5 0-.7.1-.2.3-.4.6-.4.5 0 2-.2 2.7-.8 1.5-1.1 4.2-3 6.1-3.4h.6c1.4 0 3.1.7 3.8 1.1.8-.4 2.5-1.1 3.9-1.1h.6c2.2.4 5.3 2.7 6.1 3.4.9.8 2.7.8 2.7.8.3 0 .5.2.7.4zm-4.9.7c-1-.2-2.2-.3-3.1-.3-1 0-2.1.4-3.1.8s-1.9.7-2.7.7c-.9 0-1.8-.3-2.7-.7-1.2-.4-2.2-.8-3.3-.8-1 0-2.1.1-3.1.3 2 1.6 5.6 4 9 4s6.9-2.5 9-4z"/></svg>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-bar">
+      <div class="group">
+          <div class="back img-button">
+            <div class="button-backer red">
+               <img src="https://cdn.glitch.com/349dde6e-43fb-4589-9e89-701ce6e072ac%2Fback-white.svg?v=1564071905473"/>
+            </div>
+        <div class="back-text">Toka</div>
+        </div>
+          <div class="wallet-balance img-button">
+            <div class="wallet-icon"><img src="https://cdn.glitch.com/349dde6e-43fb-4589-9e89-701ce6e072ac%2Fwalleticon.png?v=1563374516036"/></div>
+            <div class="balance"><span class="currency-symbol">Ksh</span><span class="balance-number">1209.90</span></div>
+          </div>
+          <div class="help img-button">
+            <div class="button-backer help grey">
+            <img src="https://cdn.glitch.com/349dde6e-43fb-4589-9e89-701ce6e072ac%2Fhelp.svg?v=1564077055736"/>
+            </div>
+        <div class="help-text">Msaada</div>
+        </div>
+      </div>
+    </div>
+</div>
+    
+    <div class="bottom-bar">
+      <div class="group">
+          <div class="back img-button">
+            <div class="button-backer red">
+               <img src="https://cdn.glitch.com/349dde6e-43fb-4589-9e89-701ce6e072ac%2Fback-white.svg?v=1564071905473"/>
+            </div>
+        <div class="back-text">Toka</div>
+        </div>
+          <div class="help img-button">
+            <div class="button-backer help grey">
+            <img src="https://cdn.glitch.com/349dde6e-43fb-4589-9e89-701ce6e072ac%2Fhelp.svg?v=1564077055736"/>
+            </div>
+        <div class="help-text">Msaada</div>
+        </div>
+      </div>
+    </div>
+    
+  </body>
+</html>
